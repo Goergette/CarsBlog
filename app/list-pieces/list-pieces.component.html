@@ -1,0 +1,13 @@
+<h2>list of pieces</h2>
+<h3>status of {{currentDate()|date:'fullDate'}}</h3>
+
+<div id="list-container">
+
+  <div class="piece" *ngFor="let piece of pieces">
+  <img [src]="piece.picture" class="piece-thumb">
+    <div class="piece-data">
+      {{piece.name}}
+      <div><label>stock:</label>{{piece.quantity}}</div>
+    </div>
+  </div>
+</div>
